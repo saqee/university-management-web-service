@@ -7,12 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "lint:fix": "npm run -- --fix",
+    "lint:fix": "eslint . --fix",
     "format": "prettier --ignore-path .gitignore --write .",
-    "lint:prettier":"npm run lint && npm run format"
+    "lint:prettier": "npm run lint && npm run format"
   },
   "lint-staged": {
-      "src/**/*.ts":"npm run lint:prettier"
+    "src/**/*.ts": "npm run lint:prettier"
   },
   "author": "",
   "license": "ISC",
